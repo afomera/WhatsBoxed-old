@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @box.description %>
+</p>
+
+<p>
+  <strong>Image data:</strong>
+  <%= @box.image_data %>
+</p>
+
+<p>
+  <strong>Indicator:</strong>
+  <%= @box.indicator %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @box.user %>
+</p>
+
+<%= link_to 'Edit', edit_box_path(@box) %> |
+<%= link_to 'Back', boxes_path %>

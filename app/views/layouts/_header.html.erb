@@ -16,8 +16,8 @@
     <% if user_signed_in? %>
       <ul class="nav navbar-nav">
         <li>
-          <%= link_to root_path do %>
-              <%= fa_icon 'home fa-fw', text: 'Home' %>
+          <%= link_to boxes_path do %>
+              <%= fa_icon 'archive fa-fw', text: 'Boxes' %>
           <% end %>
         </li>
         <li>
