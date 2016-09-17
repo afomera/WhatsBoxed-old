@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= f.label :image_data %>
-    <%= f.text_area :image_data %>
+  <div class="form-group">
+    <%= f.hidden_field :image, value: f.object.cached_image_data %>
+    <%= f.file_field :image %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :indicator %>
-    <%= f.text_field :indicator %>
+    <%= f.text_field :indicator, class: 'form-control' %>
   </div>
-  
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="form-group">
+    <%= f.submit class: 'btn btn-primary' %>
   </div>
 <% end %>
