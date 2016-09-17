@@ -51,3 +51,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Bootstrap and Font Awesome
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+
+
+# User accounts
+gem 'devise'
